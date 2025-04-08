@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Sorting algorithm visualization styles */
+@layer components {
+  .bg-unsorted {
+    @apply bg-gray-400;
+  }
+  
+  .bg-compared {
+    @apply bg-blue-500;
+  }
+  
+  .bg-swapped {
+    @apply bg-orange-500;
+  }
+  
+  .bg-sorted {
+    @apply bg-green-500;
+  }
+  
+  .bar {
+    @apply rounded-t-sm;
+  }
+}
